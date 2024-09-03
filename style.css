@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    font-family: "Poiret One", sans-serif;
+    padding: 0px;
+    
+}
+
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling on the entire page */
+}
+
+
+/*! NAV BAR*/
+
+.brand-logo{
+    font-family: "Poiret One", sans-serif;
+    text-transform:uppercase
+
+}
+nav ul{
+    margin-right: 20px;
+}
+
+nav ul a {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.nav-wrapper a:hover {
+    background-color: rgb(255, 255, 255); /* Background color on hover */
+    color: rgb(0, 0, 0); /* Text color on hover */
+}
+
+/* SEARCH BAR */
+
+
+#search-form .input-field input::placeholder {
+    font-family: "Poiret One", sans-serif;
+    text-transform:uppercase;
+    font-weight: 800;
+    font-size: 20px; 
+    color: lightgrey; /* Change the color of the placeholder text */
+    font-style: italic; /* Optional: set the style to italic */
+    opacity: 1; 
+    margin: 0;
+    
+}
+
+.nav-wrapper .input-field input[type=search] {
+    height:min-content;      /*  fixed search bar that was too high*/
+}
+
+.nav-search .input-field {
+    margin: 0; /* Remove any extra margin */
+}
+
+
+
+/* side nave */
+.sidenav li>a {
+    font-family: "Poiret One", sans-serif;
+    color: black;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+/* ! SARA NAME AND IMG */
+
+.hero{
+    margin-top: 0px;
+}
+.hero-section {
+    position: relative;
+    overflow: hidden; 
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+
+.company-name {
+    font-weight: 500;
+    font-size: 450px;
+    font-family: "Poiret One", sans-serif;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0); 
+
+    position: absolute;
+    top: 5px;
+    bottom: 20px; 
+    
+    text-align: center; 
+    padding: 10px;
+    z-index: 10;     /* text over image */
+
+    /* text effects  */
+    animation: drop 0.9s ease-out forwards; /* Easing adjusted for smooth landing */
+    
+}
+
+
+
+@keyframes drop {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 10; /* Fully visible */
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .my_name span {
+        font-size: 60px; /* Adjust font size for smaller screens if needed */
+    }
+}
+
+/* !ADVERT SECTION */
+.promo-title{
+    font-size: 50px;
+    text-transform: uppercase;
+    
+    text-align: center;
+    border-top: 10px solid black; /* Add top border */
+    border-bottom: 10px solid black;
+   
+}
+
+
+.card{
+    margin-top: 20px;  
+      
+}
+
+.card:hover{
+    box-shadow: 0 0 20px 10px rgba(199, 186, 186, 0.8); 
+    transform: scale(1.01); /* Slightly enlarges on hover */
+}
+.card-image img{
+    height: 300px;       /* Fixed height */
+    width: 100%;        
+    object-fit:scale-down;
+    
+}
+
+.card .card-content {
+   padding: 10px 20px;
+   text-transform: uppercase;
+    
+}
+
+/* landing page only */
+#slogan{ 
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+color: black;
+font-family: "Noto Sans", sans-serif;
+text-align: center;
+font-size: 12px;
+
+}
+
+
+/* ! ITEMS PAGES */
+
+/* PAGES CARD STYLING */
+.card .card-content p {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.carousel {
+    height: 350px;
+  
+}
+
+.carousel .carousel-item {    
+    height: auto ; /* Allow height to adjust to content , remove gap from top*/
+}
+
+
+
+
