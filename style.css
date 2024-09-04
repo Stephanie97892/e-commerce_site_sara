@@ -65,6 +65,8 @@ nav ul a {
     font-size: 10px;
     font-weight: 800;
     text-transform: uppercase;
+    
+    padding: 0 15px;
 }
 
 
@@ -207,5 +209,20 @@ font-size: 12px;
 }
 
 
+.carousel .indicators .indicator-item{
+    background-color:grey;
+}
+.carousel .indicators .indicator-item.active {
+    background-color: #000000;
+}
 
+/* ! SHOPPING BAG */
+.sidenav li>a>i, .sidenav li>a>[class^="mdi-"], .sidenav li>a li>a>[class*="mdi-"], .sidenav li>a>i.material-icons {
+    float: right;
+}
 
+.sidenav li>a{
+    font-size: 15PX;
+}
+
+/* empyty bag */
